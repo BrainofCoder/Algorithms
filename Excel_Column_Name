@@ -1,0 +1,16 @@
+// excel column name
+// http://practice.geeksforgeeks.org/problems/find-excel-column-name-from-a-given-column-number
+void abc(int n)
+{
+
+        if(n!=0)
+
+        {
+
+               abc(n%26?n/26:n/26-1);
+
+                printf("%c",n%26?n%26+64:'Z');
+
+        }
+
+}
