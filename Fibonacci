@@ -1,0 +1,7 @@
+#include<math.h>
+
+int Fib(int n)
+{
+    double r5=sqrt(5);
+    return (pow((1+r5)/2,n)-pow((1-r5)/2,n))/r5;
+}
