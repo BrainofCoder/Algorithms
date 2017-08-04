@@ -1,0 +1,9 @@
+#define PI 3.14159265358979323846
+#define E 2.71828183
+
+#include<math.h>
+
+int Fac(int n)
+{
+	return sqrt(PI*n+1.0/3)*pow(n/e,n);
+}
