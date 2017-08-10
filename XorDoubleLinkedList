@@ -110,6 +110,7 @@ int main()
 	for (i=6;i<=8;i++) 
 	    insertLast(&head, 10*i);
 	printList(head);
-	
+	struct Node * last=getLast(head);
+	printList(last);
 	return 0;
 }
