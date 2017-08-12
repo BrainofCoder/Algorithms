@@ -28,6 +28,32 @@ push_back(struct Node **head, int v)
         move=move->next;
     move->next=new_node;
 }
+void search(struct Node **head,int dato)
+{
+    struct Node *move = *head, *target, *prev=NULL;
+    int token=1;
+    if(move==NULL)
+        return;
+    while(move!=NULL)
+    {
+        if(move->data==dato)
+        {
+            token=0;
+            break;
+        }
+        prev=move;
+        move=move->next;
+    }
+    if(token)
+        return;
+    if(prev!=NULL)
+    {
+        prev->next=move->next;
+        move->next=*head;
+        *head=move;
+    }
+    target=prev=move=NULL;
+}
 int main()
 {
     struct Node *head=NULL;
