@@ -3,7 +3,7 @@ int pow(int z, int n)
 	int y = 1;
 	while (n!=0)
 	{
-    		if (n % 2 == 1)
+    		if (n&1)
         		y *= z;
 		z *= z;
 		n >>= 1;
