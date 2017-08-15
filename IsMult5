@@ -2,5 +2,5 @@ bool isMultipleof5(int n)
 {
 	if (n&1)
 		n <<= 1;
-	return (int)(n/10)*10 == n;
+	return n/10*10 == n;
 }
