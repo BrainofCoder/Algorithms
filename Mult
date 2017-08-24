@@ -13,7 +13,7 @@ unsigned int russianPeasant(unsigned int a, unsigned int b)
 {
     int res = 0;
     
-    while (b > 0)
+    while (b)
     {         
          if (b & 1)
              res += a;
